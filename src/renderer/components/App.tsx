@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import { connect } from 'react-redux';
 import { increment } from '../../shared/actions/counter';
 
-export class App extends Component {
+export interface Props {
+    handleClick: () => void
+    count: number;
+}
+
+export class App extends React.Component<Props, {}> {
   constructor(props) {
     super(props);
 
     // handleClick を書くときは必ず bind する！
     // this.handleClick = this.handleClick.bind(this)
-    this.state = {
-    };
+    // this.state = {
+    // };
   }
 
   // handleClick() {

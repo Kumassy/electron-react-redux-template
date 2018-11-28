@@ -15,18 +15,10 @@ module.exports = {
   },
   target: 'electron-renderer',
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/,
-        options: {
-          presets: ['@babel/preset-env']
-        }
-      },
       {
         test: /\.jsx?$/,
         loader: 'babel-loader',
@@ -34,6 +26,11 @@ module.exports = {
         options: {
           presets: ['@babel/preset-env']
         }
+      },
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
