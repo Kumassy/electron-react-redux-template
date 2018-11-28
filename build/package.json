@@ -1,0 +1,7 @@
+{
+  "name": "electron-react-redux-template",
+  "version": "1.0.0",
+  "description": "description",
+  "main": "./main.js",
+  "license": "MIT"
+}
