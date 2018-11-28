@@ -19,3 +19,6 @@ electron の renderer 側でのみ React + Redux 構成をとるのは比較的�
 - [ ] webpack/config で development のときは compression しない
 - [ ] renderer のホットリロード
 - [ ] main/index.js のホットリロード
+
+## License
+MIT
